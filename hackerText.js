@@ -3,11 +3,11 @@ var targetClass = "hacky-container";	//class to do the effect on
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";		//characters to randomize
 
-const readabilityRate = 100;		//time in ms
+const readabilityRate = 80;		//time in ms
 //for some reason the var above and below break it when equal, and idk why
 const randomRate = 50;		//time in ms
 
-const delay = 500;		//time in ms
+const delay = 1500;		//time in ms
 // ^^^PARAMETERS^^^
 
 var elements = [];

@@ -5,17 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>READY PLAYER ONE</title>
+
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="readyplayerone.css">
-    <script src="hackerText.js"></script>
+    <script src="hackerText.js" defer></script>
+    <script src="backdrop-mover.js" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
 
     <div id="main-page">
+
+        <div id="back-button-parent">
+            <a href="./index.html" class="material-symbols-outlined" id="back-button">arrow_back_ios</a>
+        </div>
+        <br>
         <div id="titles">
-            <span id="main-subtitle" class="hacky-container">ENTER THE OASIS</span>
+            <span id="main-subtitle">ENTER THE OASIS</span>
             <br>
             <span id="main-title" class="hacky-container">READY PLAYER ONE</span>
         </div>
+
+        <br>
+        <br>
+
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/cSp1dM2Vj48?si=xUoyvA8P7pFsOye3" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>        
+
+        <br>
+        <br>
+        <br>
+  
+        <div id="synopsis-parent">
+            <span id="synopsis">
+                "READY PLAYER ONE," DIRECTED BY STEVEN SPIELBERG AND BASED ON ERNEST CLINE'S NOVEL, IS A SCI-FI ADVENTURE SET IN <b>2045</b> WHERE TEENAGER WADE WATTS ESCAPES HIS <b>BLEAK REALITY</b> BY IMMERSING HIMSELF IN THE <b>OASIS</b>, A VAST <b>VIRTUAL REALITY</b> UNIVERSE. THE STORY FOLLOWS WADE, USING HIS AVATAR PARZIVAL, AS HE JOINS FORCES WITH FELLOW GAMERS TO FIND AN <b>EASTER EGG</b> HIDDEN BY THE OASIS'S CREATOR, JAMES HALLIDAY. THE WINNER WILL INHERIT HALLIDAY'S <b>FORTUNE AND CONTROL OF THE OASIS</b>. THEY MUST OUTSMART THE RUTHLESS IOI CORPORATION AND ITS LEADER, NOLAN SORRENTO, IN A <b>THRILLING QUEST</b> FILLED WITH <b>80S POP CULTURE REFERENCES</b> AND HIGH-STAKES CHALLENGES, BOTH VIRTUAL AND REAL.            
+            </span>
+        </div>
+
+        <br>
+        <br>
+
+        <form id="voteForm">
+            <div id="input-container">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your school email"
+                    name="email"
+                />
+
+                <div class="vote-container">
+                    <button type="submit" id="readyplayerone" value="readyplayerone" class="vote-btn readyplayerone">VOTE FOR THIS</button>
+
+                    <button type="submit" id="pixels" value="pixels" class="vote-btn pixels hidden">Vote</button>
+                    <button type="submit" id="bigdaddy" value="bigdaddy" class="vote-btn bigdaddy hidden" >Vote</button>
+                </div>
+            </div>
+        </form>
+
     </div>
 
 </body>
